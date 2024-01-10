@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <link
       rel="stylesheet"
@@ -29,11 +29,17 @@
       </div>
     </section>
     <div class="container">
-      <input type="text" id="input" aria-label="movie_title">
+      <div class="dropdown is-active">
+        <input type="text" id="input" aria-label="movie_title" />
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">Movie#1</a>
+          </div>
+        </div>
+      </div>
       <div id="target"></div>
     </div>
     <script src="utils.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
-
