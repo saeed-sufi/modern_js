@@ -60,6 +60,7 @@ document.addEventListener("click", (event) => {
     dropdown.classList.remove('is-active')
   }
 })
+
 input.addEventListener("input", debounce(onInput, 500))
 
 const onMovieSelect = async movie => {
